@@ -1,5 +1,4 @@
 import pydeck as pdk
-import streamlit as st
 import pandas as pd
 
 
@@ -20,7 +19,7 @@ def render_map(session_state, indi_ed_lat, indi_ed_lon, image):
         layers=[
             pdk.Layer(
                 'ScatterplotLayer',
-                data=session_state.home,
+                data=session_state.blue_car,
                 get_position='[lon, lat]',
                 get_color='[0, 30, 300, 160]',
                 get_radius=500,
