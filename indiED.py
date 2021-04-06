@@ -23,10 +23,10 @@ indi_ed_lat = 27.77315
 indi_ed_lon = -82.65881
 
 # add functionality: set a dynamic title
-enable_dynamic_title = 'OFF'
+enable_dynamic_title = 'ON'
 
 # add functionality: enable driving instructions
-enable_driving_run = 'OFF'
+enable_driving_run = 'ON'
 
 
 #############################################
