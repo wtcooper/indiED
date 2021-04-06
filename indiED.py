@@ -23,10 +23,10 @@ indi_ed_lat = 27.77315
 indi_ed_lon = -82.65881
 
 # add functionality: set a dynamic title
-enable_dynamic_title = 'OFF'
+enable_dynamic_title = 'ON'
 
 # add functionality: enable driving instructions
-enable_driving_run = 'OFF'
+enable_driving_run = 'ON'
 
 
 #############################################
@@ -119,10 +119,6 @@ if click_reset:
     session_state.blue_car['lat'] = default_home_lat
     render_map(session_state, indi_ed_lat, indi_ed_lon, image)
 
-# if click_down_left:
-#     st.write('Moving down and to the left!')
-#     session_state.blue_car['lat'] = session_state.blue_car['lat']-0.01
-#     session_state.blue_car['lon'] = session_state.blue_car['lon']-0.01
 
 if enable_driving_run == 'ON':
     if click_run:
